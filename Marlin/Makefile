@@ -95,8 +95,10 @@ AVR_TOOLS_PATH ?=
 # Programmer configuration
 UPLOAD_RATE        ?= 57600
 AVRDUDE_PROGRAMMER ?= arduino
-# On most linuxes this will be /dev/ttyACM0 or /dev/ttyACM1
-UPLOAD_PORT        ?= /dev/ttyUSB0
+# # On most linuxes this will be /dev/ttyACM0 or /dev/ttyACM1
+# UPLOAD_PORT        ?= /dev/ttyUSB0
+# On Yunho's MacBongPro's upper-right USB port:
+UPLOAD_PORT        ?= /dev/tty.usbmodem2101
 
 # Directory used to build files in, contains all the build files, from object
 # files to the final hex file on linux it is best to put an absolute path
