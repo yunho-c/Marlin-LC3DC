@@ -55,7 +55,7 @@ class ShapeDrawer:
         # A small delay to ensure the command is processed.
         # For more complex applications, you would want a more robust
         # way of checking the command queue.
-        time.sleep(0.01)
+        time.sleep(0.01)  # HACK artificial delay
 
     def setup_printer(self):
         """
